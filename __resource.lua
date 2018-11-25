@@ -1,9 +1,7 @@
 ui_page "index.html"
 
-client_scripts {
-    "@vrp/lib/utils.lua",
-    "client.lua"
-}
+client_script "client.lua"
+
 server_scripts {
     "@vrp/lib/utils.lua",
     "server.lua"
