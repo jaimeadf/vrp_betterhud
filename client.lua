@@ -4,6 +4,7 @@ local hunger, thirst = 0, 0
 Citizen.CreateThread(function ()
     while true do
         Citizen.Wait(100)
+        TriggerServerEvent("getBasics")
         SendNUIMessage({
             show = IsPauseMenuActive(),
             armor = GetPedArmour(GetPlayerPed(-1)),
