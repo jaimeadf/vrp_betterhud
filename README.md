@@ -7,7 +7,6 @@
 ![Screenshot](https://i.imgur.com/d2eruQL.png)
 ![Screenshot](https://i.imgur.com/0QROv7F.jpg)
 
-How to install:
 
 **How to install:**
 
