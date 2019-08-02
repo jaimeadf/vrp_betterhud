@@ -1,10 +1,8 @@
--- Credits: Marmota#2533
-local hunger, thirst = 0, 0
+local thirst, hunger = 0
 
 Citizen.CreateThread(function ()
     while true do
         Citizen.Wait(100)
-        TriggerServerEvent("getBasics")
         SendNUIMessage({
             show = IsPauseMenuActive(),
             armor = GetPedArmour(GetPlayerPed(-1)),
@@ -15,8 +13,10 @@ Citizen.CreateThread(function ()
     end
 end)
 
-RegisterNetEvent("returnBasics")
-AddEventHandler("returnBasics", function (rHunger, rThirst)
-    hunger = rHunger
-    thirst = rThirst
+RegisterNetEvent("vrp_betterhud:updateBasics")
+AddEventHandler("vrp_betterhud:updateBasics", function(rHunger, rThirst)
+    hunger, thirst = rHunger, rThirst
 end)
+
+
+
