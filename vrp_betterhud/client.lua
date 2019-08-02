@@ -1,10 +1,8 @@
-local Tunnel = module("vrp", "lib/Tunnel")
-hudServer = Tunnel.getInterface("vrp_betterhud")
+local thirst, hunger = 0
 
 Citizen.CreateThread(function ()
     while true do
         Citizen.Wait(100)
-        local thirst, hunger = hudServer.getBasics()
         SendNUIMessage({
             show = IsPauseMenuActive(),
             armor = GetPedArmour(GetPlayerPed(-1)),
@@ -14,3 +12,11 @@ Citizen.CreateThread(function ()
         })
     end
 end)
+
+RegisterNetEvent("vrp_betterhud:updateBasics")
+AddEventHandler("vrp_betterhud:updateBasics", function(rHunger, rThirst)
+    hunger, thirst = rHunger, rThirst
+end)
+
+
+
