@@ -27,19 +27,19 @@ ul li {
     height: 2.5vw;
 }
 #circle-life {
-    background-image: url("https://svgur.com/i/EQh.svg");
+    background-image: url("./img/life.svg");
     border: solid 0.1vw #da3035;
 }
 #circle-armor {
-    background-image: url("https://svgur.com/i/9Yn.svg");
+    background-image: url("./img/armor.svg");
     border: solid 0.1vw #363a83;
 }
 #circle-hunger {
-    background-image: url("https://svgur.com/i/9Ym.svg");
+    background-image: url("./img/hunger.svg");
     border: solid 0.1vw #d87b34;
 }
 #circle-thirst {
-    background-image: url("https://svgur.com/i/9Z8.svg");
+    background-image: url("./img/thirst.svg");
     border: solid 0.1vw #0a9ad2;
 }
 .bar {

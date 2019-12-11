@@ -9,5 +9,10 @@ client_scripts {
 files {
     "HTML/ui.html",
     "HTML/ui.css",
-    "HTML/ui.js"
+    "HTML/ui.js",
+	
+	"HTML/img/life.svg",
+	"HTML/img/armor.svg",
+	"HTML/img/hunger.svg",
+	"HTML/img/thirst.svg"
 }
